@@ -23,6 +23,6 @@ Best place to sell: Gumroad or Lemon Squeezy next to other indie music desks, wi
 
 MIT. workinwithai-create.
 
-## Acceptance notes
+## Status
 
-Implements lookahead scheduler on AudioContext clock, live state reads, pinned samples, BPM/key persistence, visibility stop. Full WAV/MIDI export and exact sample-count checks to be verified on ship.
+Core playback + grid-exact WAV (OfflineAudioContext, exact sample count, folded tail, 48 kHz 24-bit, peak ≤ -1 dBFS) and MIDI exports implemented. Key transposition and BPM persistence active. **Not shipped**: permanent production deployment, real checkout/license gate, and full mobile onboarding verification still required. Audio engine rules 1–4 satisfied for the export milestone; remaining acceptance checks pending browser/DAW verification.
