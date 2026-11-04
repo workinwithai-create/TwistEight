@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TwistEight — eight-bar twist desk</title>
+  <meta name="description" content="Eight live-instrument bars that twist the stuck loop so the section has a way out." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>TwistEight</h1>
+  <p class="lead">Eight-bar twist desk. Loops photocopy themselves. Session players add a harmonic turn, a counter-line, or a rhythmic hitch so the section can leave and the track can finish. Live piano, upright, nylon, kit, trumpet, violin.</p>
+  <p class="status" id="status">Seating chairs…</p>
+  <div class="controls">
+    <label>BPM <input id="bpm" type="number" min="60" max="180" value="92" /></label>
+    <label>Key <select id="key"><option>A minor</option><option>C major</option><option>E minor</option><option>D minor</option></select></label>
+  </div>
+  <p class="eyebrow">Groove</p>
+  <div class="row" id="grooves"></div>
+  <p class="eyebrow">Twist</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Form · loop 1–8 · twist 9–16</p>
+  <div class="bars" id="bars"></div>
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+  <div class="exports">
+    <button id="exportWav">Export WAV</button>
+    <button id="exportMid">Export MIDI</button>
+  </div>
+</main>
+<div class="dock">
+  <button id="playA">A · Loop</button>
+  <button id="playB">B · Twist</button>
+  <button id="play8">8 · Twist only</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
